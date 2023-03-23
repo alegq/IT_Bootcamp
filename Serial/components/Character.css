@@ -1,0 +1,50 @@
+﻿div.Character
+{
+  padding: 2px 0;
+
+
+}
+
+
+div.Container
+{
+  max-width: 1200px;
+  margin: 0px auto;
+  padding: 0px 15px;
+}
+
+@media (max-width: 1200px) {
+  .Container{
+    max-width: 970px;
+  }
+}
+
+@media (max-width: 992px) {
+  .Container{
+    max-width: 750px;
+  }
+}
+
+@media (max-width: 767px) {
+  .Container{
+    max-width: none;
+  }
+}
+
+span.MobileClientBalance
+{
+  float: right;
+  width: 30px;
+  font-weight: bold;
+  text-align: right;
+}
+
+span.MobileClientFIO
+{
+  margin-right: 30px;
+}
+
+
+.grid {
+
+}
