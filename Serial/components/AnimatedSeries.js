@@ -22,6 +22,7 @@ class AnimatedSeries extends React.PureComponent {
   state = {
     dataReady: false,
     clients: [],
+    selectCharacter : false,
   };
 
   fetchError = (errorMessage) => {
@@ -51,6 +52,10 @@ class AnimatedSeries extends React.PureComponent {
 
   };
 
+  ClickCharacter = (id) => {
+    console.log(id)
+  }
+
 
 
   render() {
@@ -59,7 +64,7 @@ class AnimatedSeries extends React.PureComponent {
       return <div>загрузка данных...</div>;
 
     const clientsCode=this.state.clients.map( client =>
-      <Character key={client.id} info={client.name} image={client.image} />
+      <Character key={client.id} id={client.id} info={client.name} image={client.image} cbClickCharacter={this.ClickCharacter} />
     );
 
     return (
@@ -67,6 +72,11 @@ class AnimatedSeries extends React.PureComponent {
         <div className='MobileCompanyClients'>
           {clientsCode}
         </div>
+        {
+            (this.state.selectCharacter )&&
+            <InfoCharacter code={this.state.selectedProductCode}
+            />
+        }
       </div>
     )
     ;
