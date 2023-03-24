@@ -1,0 +1,29 @@
+.InfoCharacter
+{
+    position: fixed;
+    top: 50%; left: 50%;
+    margin-left: -25%;
+    margin-top: -25%;
+    background-color: darkgray;
+    width: 60%;
+    height: 40%;
+    /*opacity: 0.7;*/
+}
+
+.TextInfo
+{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(2, 150px);
+    grid-template-rows: repeat(3, 50px);
+
+    float: right;
+}
+
+.ImagInfo
+{
+    float: left;
+    width: 45%;
+    height: 100%;
+
+}

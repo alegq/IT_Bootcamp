@@ -6,11 +6,6 @@ import './Character.css';
 class Character extends React.PureComponent {
 
   static propTypes = {
-    //info:PropTypes.shape({
-     // id: PropTypes.number.isRequired,
-     // fio: PropTypes.string.isRequired,
-    //  balance: PropTypes.number.isRequired,
-    //}),
     id : PropTypes.number.isRequired,
     info: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
@@ -23,7 +18,7 @@ class Character extends React.PureComponent {
   };
 
   render() {
-
+    console.log('render Character');
     return (
       <div className='Character'>
         {/*<span className='MobileClientBalance'>{this.props.info}</span>*/}
