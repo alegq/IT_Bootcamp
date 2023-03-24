@@ -21,7 +21,6 @@ class AnimatedSeries extends React.PureComponent {
 
   state = {
     dataReady: false,
-    name: "???",
     clients: [],
   };
 
