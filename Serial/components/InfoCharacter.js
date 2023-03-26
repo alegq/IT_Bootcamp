@@ -1,12 +1,12 @@
 import React from 'react';
-
 import "./InfoCharacter.css";
 
-export default ({info}) => {
-    console.log(info)
+//компанент создает окно с подробной информацией одного персонажа
+
+export default ({info,cbCloseInfo}) => {
     return (
         <div className={'InfoCharacter'}>
-            {/*<button>сброс</button>*/}
+            <div className="Close " onClick={cbCloseInfo}>❌</div>
             <img className={'ImagInfo'} src={info.image} alt=""/>
             <div className={'TextInfo'}>
                 <span>Name: <br/> {info.name} </span>

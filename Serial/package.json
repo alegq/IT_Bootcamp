@@ -1,7 +1,7 @@
 {
-  "name": "mobile",
+  "name": "series",
   "version": "1.0.0",
-  "description": "мобильная компания",
+  "description": "Animated Series",
   "main": "App.js",
   "scripts": {
     "build": ".\\node_modules\\.bin\\webpack",

@@ -1,12 +1,9 @@
 ﻿import React from 'react';
 import ReactDOM from 'react-dom';
 
-import AnimatedSeries from './components/AnimatedSeries';
-
-let addCharacters= 0;
+import Wrapper from './components/Wrapper';
 
 
-
-ReactDOM.render(<AnimatedSeries addCharacters={addCharacters}/>,
+ReactDOM.render(<Wrapper />,
     document.getElementById('container') );
 

@@ -1,0 +1,81 @@
+html {
+    scroll-behavior: smooth;
+}
+
+div.Wrapper
+{
+    max-width: 70%;
+    margin: 0px auto;
+    padding: 0px 15px;
+}
+
+.arrowTop {
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 1%;
+    position: fixed;
+    top: 3%;
+    left: 3%;
+    cursor: pointer;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+
+.Pagination{
+    height: 1%;
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    margin: 2%;
+}
+
+.BackArrowPag{
+    top: 50%;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 1%;
+    float: right;
+    position: relative;
+    /*top: 3%;*/
+    /*left: 3%;*/
+    cursor: pointer;
+    transform: rotate(135deg);
+    -webkit-transform: rotate(135deg);
+
+}
+
+.NumberPagePag{
+    top: 50%;
+    border: solid black;
+    display: inline-block;
+    padding: 1%;
+    left: 50%;
+    /*margin-left: -25%;*/
+    /*margin-top: -25%;*/
+    position: relative;
+
+}
+
+.NextArrowPag{
+    top: 50%;
+    border: solid black;
+    border-width: 0 4px 4px 0;
+    display: inline-block;
+    padding: 1%;
+    position: relative;
+
+    cursor: pointer;
+    transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+
+}
+
+.Checkbox
+{
+    text-align: center;
+    margin: 1%;
+}
+
+
